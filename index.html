@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Strength Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Password Strength Checker</h1>
+
+        <p>Enter a password to check its strength.</p>
+
+        <input type="password" id="password"
+               placeholder="Enter your password">
+
+        <button onclick="checkPassword()">Check Strength</button>
+
+        <h2 id="result"></h2>
+
+        <p id="entropy"></p>
+
+        <ul>
+            <li>At least 8 characters</li>
+            <li>Uppercase letter</li>
+            <li>Lowercase letter</li>
+            <li>Number</li>
+            <li>Special character</li>
+        </ul>
+
+        <p id="feedback"></p>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
